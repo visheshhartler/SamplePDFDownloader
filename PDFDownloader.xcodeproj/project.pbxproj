@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C00A7F01F5D817B00C77811 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C00A7EF1F5D817B00C77811 /* TableViewController.swift */; };
+		0C00A7F51F5D85A900C77811 /* CellViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C00A7F41F5D85A900C77811 /* CellViewControllerTableViewCell.swift */; };
 		0CF108431F5D803800FC3D65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF108421F5D803800FC3D65 /* AppDelegate.swift */; };
-		0CF108451F5D803800FC3D65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF108441F5D803800FC3D65 /* ViewController.swift */; };
 		0CF108481F5D803800FC3D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF108461F5D803800FC3D65 /* Main.storyboard */; };
 		0CF1084A1F5D803800FC3D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF108491F5D803800FC3D65 /* Assets.xcassets */; };
 		0CF1084D1F5D803800FC3D65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF1084B1F5D803800FC3D65 /* LaunchScreen.storyboard */; };
+		DC86815AC05A173C565C824B /* Pods_PDFDownloader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED78BA11904D7EB90E52A72 /* Pods_PDFDownloader.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C00A7EF1F5D817B00C77811 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0C00A7F41F5D85A900C77811 /* CellViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		0CF1083F1F5D803800FC3D65 /* PDFDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF108421F5D803800FC3D65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0CF108441F5D803800FC3D65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0CF108471F5D803800FC3D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CF108491F5D803800FC3D65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CF1084C1F5D803800FC3D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CF1084E1F5D803800FC3D65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4ED78BA11904D7EB90E52A72 /* Pods_PDFDownloader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PDFDownloader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28A121FDD1EDF9C426D580B /* Pods-PDFDownloader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFDownloader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PDFDownloader/Pods-PDFDownloader.debug.xcconfig"; sourceTree = "<group>"; };
+		B3EEDC5D99AD030679BB2916 /* Pods-PDFDownloader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDFDownloader.release.xcconfig"; path = "Pods/Target Support Files/Pods-PDFDownloader/Pods-PDFDownloader.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC86815AC05A173C565C824B /* Pods_PDFDownloader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				0CF108411F5D803800FC3D65 /* PDFDownloader */,
 				0CF108401F5D803800FC3D65 /* Products */,
+				C661FDF8420ABEA6A9AE83F2 /* Pods */,
+				82A256640E63DDBAFD31C9B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +64,31 @@
 			isa = PBXGroup;
 			children = (
 				0CF108421F5D803800FC3D65 /* AppDelegate.swift */,
-				0CF108441F5D803800FC3D65 /* ViewController.swift */,
 				0CF108461F5D803800FC3D65 /* Main.storyboard */,
 				0CF108491F5D803800FC3D65 /* Assets.xcassets */,
 				0CF1084B1F5D803800FC3D65 /* LaunchScreen.storyboard */,
 				0CF1084E1F5D803800FC3D65 /* Info.plist */,
+				0C00A7EF1F5D817B00C77811 /* TableViewController.swift */,
+				0C00A7F41F5D85A900C77811 /* CellViewControllerTableViewCell.swift */,
 			);
 			path = PDFDownloader;
+			sourceTree = "<group>";
+		};
+		82A256640E63DDBAFD31C9B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ED78BA11904D7EB90E52A72 /* Pods_PDFDownloader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C661FDF8420ABEA6A9AE83F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B28A121FDD1EDF9C426D580B /* Pods-PDFDownloader.debug.xcconfig */,
+				B3EEDC5D99AD030679BB2916 /* Pods-PDFDownloader.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CF108511F5D803800FC3D65 /* Build configuration list for PBXNativeTarget "PDFDownloader" */;
 			buildPhases = (
+				F7F9AA72BDB226D34509B5EF /* [CP] Check Pods Manifest.lock */,
 				0CF1083B1F5D803800FC3D65 /* Sources */,
 				0CF1083C1F5D803800FC3D65 /* Frameworks */,
 				0CF1083D1F5D803800FC3D65 /* Resources */,
+				574B3C4977EB62F1F2DDAB1A /* [CP] Embed Pods Frameworks */,
+				BC2633BB1F1350F4EBF18004 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +161,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		574B3C4977EB62F1F2DDAB1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDFDownloader/Pods-PDFDownloader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC2633BB1F1350F4EBF18004 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PDFDownloader/Pods-PDFDownloader-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7F9AA72BDB226D34509B5EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0CF1083B1F5D803800FC3D65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CF108451F5D803800FC3D65 /* ViewController.swift in Sources */,
 				0CF108431F5D803800FC3D65 /* AppDelegate.swift in Sources */,
+				0C00A7F51F5D85A900C77811 /* CellViewControllerTableViewCell.swift in Sources */,
+				0C00A7F01F5D817B00C77811 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +337,7 @@
 		};
 		0CF108521F5D803800FC3D65 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28A121FDD1EDF9C426D580B /* Pods-PDFDownloader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PDFDownloader/Info.plist;
@@ -270,6 +350,7 @@
 		};
 		0CF108531F5D803800FC3D65 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3EEDC5D99AD030679BB2916 /* Pods-PDFDownloader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PDFDownloader/Info.plist;
@@ -299,6 +380,7 @@
 				0CF108531F5D803800FC3D65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
