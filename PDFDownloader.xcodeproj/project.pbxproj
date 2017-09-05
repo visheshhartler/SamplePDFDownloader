@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0C00A7F01F5D817B00C77811 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C00A7EF1F5D817B00C77811 /* TableViewController.swift */; };
 		0C00A7F51F5D85A900C77811 /* CellViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C00A7F41F5D85A900C77811 /* CellViewControllerTableViewCell.swift */; };
+		0C87204C1F5E7D2D00A145DE /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C87204B1F5E7D2D00A145DE /* ReaderViewController.swift */; };
 		0CF108431F5D803800FC3D65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF108421F5D803800FC3D65 /* AppDelegate.swift */; };
 		0CF108481F5D803800FC3D65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CF108461F5D803800FC3D65 /* Main.storyboard */; };
 		0CF1084A1F5D803800FC3D65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CF108491F5D803800FC3D65 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		0C00A7EF1F5D817B00C77811 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		0C00A7F41F5D85A900C77811 /* CellViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		0C87204B1F5E7D2D00A145DE /* ReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
 		0CF1083F1F5D803800FC3D65 /* PDFDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF108421F5D803800FC3D65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CF108471F5D803800FC3D65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				0CF1084E1F5D803800FC3D65 /* Info.plist */,
 				0C00A7EF1F5D817B00C77811 /* TableViewController.swift */,
 				0C00A7F41F5D85A900C77811 /* CellViewControllerTableViewCell.swift */,
+				0C87204B1F5E7D2D00A145DE /* ReaderViewController.swift */,
 			);
 			path = PDFDownloader;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				0CF108431F5D803800FC3D65 /* AppDelegate.swift in Sources */,
 				0C00A7F51F5D85A900C77811 /* CellViewControllerTableViewCell.swift in Sources */,
 				0C00A7F01F5D817B00C77811 /* TableViewController.swift in Sources */,
+				0C87204C1F5E7D2D00A145DE /* ReaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

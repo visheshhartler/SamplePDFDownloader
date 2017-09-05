@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2hS-cq-Bsj" id="8hb-0A-haN">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rs2-uw-nG0">
@@ -67,6 +68,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCC-gM-xU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1000.8" y="97.601199400299862"/>
+        </scene>
+        <!--Reader View Controller-->
+        <scene sceneID="vJj-tQ-0kF">
+            <objects>
+                <viewController storyboardIdentifier="ReaderViewController" id="YNV-vW-Ec5" customClass="ReaderViewController" customModule="PDFDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8du-FZ-MUc"/>
+                        <viewControllerLayoutGuide type="bottom" id="P9c-W1-ZOB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D3q-ff-Qg5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIv-Od-tr0">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UIv-Od-tr0" firstAttribute="leading" secondItem="D3q-ff-Qg5" secondAttribute="leadingMargin" id="9xL-Y6-uTg"/>
+                            <constraint firstItem="P9c-W1-ZOB" firstAttribute="top" secondItem="UIv-Od-tr0" secondAttribute="bottom" id="Oa4-pN-ley"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UIv-Od-tr0" secondAttribute="trailing" id="jqK-Cf-gnd"/>
+                            <constraint firstItem="UIv-Od-tr0" firstAttribute="top" secondItem="8du-FZ-MUc" secondAttribute="bottom" id="pOU-9w-Ng4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="UIv-Od-tr0" id="KBP-Xu-kIj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pfm-Gd-D4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1716" y="98"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Ucm-RE-9BT">

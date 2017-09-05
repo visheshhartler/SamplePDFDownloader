@@ -32,6 +32,7 @@ class CellViewControllerTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        btnView.isEnabled = false
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

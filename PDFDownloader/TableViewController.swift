@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Alamofire
+import MBProgressHUD
+import WebKit
 
 class TableViewController: UITableViewController, cellDelegate{
     
@@ -15,7 +18,7 @@ class TableViewController: UITableViewController, cellDelegate{
                     "http://www.iso.org/iso/annual_report_2009.pdf"]
     
     
-
+    var fileLocalURLDic = [Int:String]();
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
@@ -47,6 +50,7 @@ class TableViewController: UITableViewController, cellDelegate{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CellViewControllerTableViewCell
+         cell.selectionStyle = .none
          cell.NameLabel.text = pdfArray[indexPath.row].components(separatedBy: "/").last
          cell.delegate = self
         return cell
@@ -55,11 +59,51 @@ class TableViewController: UITableViewController, cellDelegate{
     func didClickViewButton(cell: UITableViewCell) {
         let indexPath = self.tableView.indexPath(for: cell)
         print(indexPath?.row ?? 9)
+        
+        if let index = indexPath?.row {
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "ReaderViewController") as! ReaderViewController;
+            let urlString:String! = fileLocalURLDic[index]
+            vc.urlString = urlString;
+            self.navigationController?.pushViewController(vc, animated: true);
+        }
     }
     
     func didClickDownloadButton(cell: UITableViewCell) {
         let indexPath = self.tableView.indexPath(for: cell)
         print(indexPath?.row ?? 9)
+        if let ind = indexPath?.row {
+            (cell as! CellViewControllerTableViewCell).btnView.isEnabled = true
+            downloadFileWithIndex(index: ind)
+        }
+        
+    }
+    
+    func downloadFileWithIndex(index: Int) {
+        // Following is the code for the progress bar
+        let hud = MBProgressHUD.showAdded(to: self.view, animated: true);
+        hud.mode = MBProgressHUDMode.annularDeterminate;
+        hud.label.text = "Loading..."
+        //Following is the code for downloading the file
+        let urlString = pdfArray[index];
+        let desitnation: DownloadRequest.DownloadFileDestination = {_,_ in 
+            let documentURL: NSURL = FileManager.default.urls(for: .documentDirectory,
+                                                              in: .userDomainMask).first! as NSURL
+            print("==>DocumentURL", documentURL)
+            let fileURL = documentURL.appendingPathComponent("\(index).pdf");
+            print("==>fileURL",fileURL ?? "NO File URL");
+            return (fileURL!, [.removePreviousFile, .createIntermediateDirectories]);
+        }
+        
+        Alamofire.download(urlString, to: desitnation).downloadProgress(closure: {
+            (prog) in hud.progress = Float(prog.fractionCompleted)
+        }).response {
+            response in
+            hud.hide(animated: true);
+            if response.error == nil, let filePath = response.destinationURL?.path {
+                print("mmmm", filePath);
+                self.fileLocalURLDic[index] = filePath;
+            }
+        }
     }
     
 
